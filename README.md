@@ -147,7 +147,7 @@ upgrade the firmware to J-Link. More information for upgrading to J-Link may
 be found
 [here](https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/). 
 
-## Release Notes
+# Release Notes
 
 ### Version 0.0.1
 First version tested on macOS, Linux and Windows. 
