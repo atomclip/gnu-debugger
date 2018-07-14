@@ -6,10 +6,10 @@ Code debug adaptor for Arm embedded processors. This extension is suited for
 macOS, Linux and Window. 
 
 <div align="center">
-<img src="images/GNU-debugger-512x512.png" alt="GNU debugger" width="20%">
-<img src="images/macOS-512x512.png" alt="macOS" width="20%">
-<img src="images/Linux-512x512.png" alt="Linux" width="20%">
-<img src="images/Windows-512x512.png" alt="Windows" width="20%">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/GNU-debugger-512x512.png" alt="GNU debugger" width="20%">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/macOS-512x512.png" alt="macOS" width="20%">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/Linux-512x512.png" alt="Linux" width="20%">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/Windows-512x512.png" alt="Windows" width="20%">
 </div>
 
 The adaptor uses the GNU source level debugger (GDB) that enables examination of 
@@ -33,7 +33,7 @@ be found
 [here](https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/). 
 
 # Features
-<img src="images/play-bar.png" alt="playbar">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/play-bar.png" alt="playbar">
 
 - source level debugging of C and C+++
 - set / clear breakpoints
@@ -45,7 +45,7 @@ be found
 Visual Studio Code has no standard way to set the format of variables. In this 
 extension you can change the output format with a number prefix.
 
-<img src="images/set-format.png" alt="set format">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/set-format.png" alt="set format">
 
 Use the following number prefixes:
 - *0b* = binary
@@ -59,14 +59,14 @@ To view/change global variables on every debug session add a *customVariables*
 list to the launch.json.
 
 <div align="center">
-<img src="images/custom.png" alt="custom variables">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/custom.png" alt="custom variables">
 </div>
 
 Here is an example launch.json for the Infineon XMC 2Go a low cost board with 
 an Arm Cortex-M0 processor.
 
 <div align="center">
-<img src="images/XMC2Go.jpg" alt="XMC 2Go">
+<img src="https://raw.githubusercontent.com/atomclip/gnu-debugger/master/images/XMC2Go.jpg" alt="XMC 2Go">
 </div>
 
 ```javascript
@@ -103,7 +103,6 @@ an Arm Cortex-M0 processor.
   ]
 }
 ```
-
 
 # Principle of operation
 The extension uses the machine oriented text interface of the GNU source level
