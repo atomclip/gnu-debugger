@@ -148,5 +148,11 @@ be found
 
 # Release Notes
 
+### Version 0.0.2
+Fixed a bug causing a error message "resource is not available".
+This problems shows when you have a source file compiled without debug 
+information. Visual Studio code now shows "Unknown Source" if the debug
+information is missing. 
+
 ### Version 0.0.1
 First version tested on macOS, Linux and Windows. 

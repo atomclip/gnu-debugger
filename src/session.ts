@@ -758,8 +758,20 @@ export class GnuDebugSession extends DebugSession {
 						let fullname: string = frame.fullname;
 						let line: number = parseInt(frame.line);
 						let source = new Source(file, fullname);
-						let stackFrame =
+						let stackFrame;
+
+						// Prevent undefined message when there is no source file.
+						// vscode will now show Unknown Source in the UI
+						if (file == undefined)
+						{
+							stackFrame = 
+							new StackFrame(level, func + ' @ ' + addr);
+						}
+						else
+						{
+							stackFrame = 
 							new StackFrame(level, func + ' @ ' + addr, source, line, 0);
+						}
 						stackFrames.push(stackFrame);
 					}
 				}
