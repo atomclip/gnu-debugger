@@ -9,7 +9,7 @@ configuration in launch.json.
 @file
 @copyright   Atomclip, all rights reserved
 @author      Carl van Heezik
-@version     0.0.1
+@version     0.0.3
 @since       2018-06-29
 */
 'use strict';
@@ -81,7 +81,11 @@ class GnuConfigurationProvider implements vscode.DebugConfigurationProvider
 			}
 
 			// make VS Code connect to debug server instead of launching debug adapter
-			config.debugServer = this.server.address();
+			let address = this.server.address() as Net.AddressInfo;
+			if (address)
+			{
+				config.debugServer = address.port;
+			}
 		}
 		return config;
 	}
