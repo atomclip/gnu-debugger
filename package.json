@@ -3,7 +3,7 @@
 	"displayName": "gnu-debugger",
 	"description": "JLink GNU debugger was MOVED !",
 	"icon": "images/moved.png",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"preview": true,
 	"publisher": "atomclip",
 	"engines": {
